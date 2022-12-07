@@ -16,9 +16,4 @@
     Console.Write("Введите z2: ");
     int z2 = int.Parse(Console.ReadLine()!);
     
-double result = double.Parse(Console.ReadLine()!);
-    result = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2) + Math.Pow((z1 - z2), 2));
-    
-    Console.WriteLine("Расстояние между точками: ", result);
-
 
