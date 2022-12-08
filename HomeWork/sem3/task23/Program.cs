@@ -4,9 +4,9 @@
 
 Console.Write("Введите число: ");
 
-int number = int.Parse(Console.ReadLine()!);
+int num = int.Parse(Console.ReadLine()!);
 
-for (int i = 1; i <= number; i++)
+for (int i = 1; i <= num; i++)
 {
     Console.Write(Math.Pow(i, 3) + ", ");
 }
