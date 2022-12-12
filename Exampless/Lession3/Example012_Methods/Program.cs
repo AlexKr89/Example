@@ -65,4 +65,13 @@ string Method4(int count, string text)
     return result;
 }
 string res = Method4(10, " qwerty");
-Console.Write(res);
+// Console.Write(res);
+
+for (int i = 1; i <= 10; i++)
+{
+    for (int j = 1; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} x {j} = {i * j}");
+    }
+     Console.WriteLine(); //Пустая строка после выполнения второго цикла
+}
