@@ -35,17 +35,32 @@
 // int year = Method3();
 // Console.WriteLine(year);
 
-//Вид4
+//Вид4 Через While
+
+// string Method4(int count, string text)
+// {
+//     int i = 0;
+//     string result = String.Empty; //Пустая строка - ""
+
+//     while (i < count)
+//     {
+//         result = result + text;
+//         i++;
+//     }
+//     return result;
+// }
+// string res = Method4(10, " qwerty");
+// Console.Write(res);
+
+
+// Вид 4 через for
 
 string Method4(int count, string text)
 {
-    int i = 0;
     string result = String.Empty; //Пустая строка - ""
-
-    while (i < count)
+    for (int i = 0; i < count; i++)
     {
         result = result + text;
-        i++;
     }
     return result;
 }
