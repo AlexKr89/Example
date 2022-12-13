@@ -55,23 +55,48 @@
 
 // Вид 4 через for
 
-string Method4(int count, string text)
+// string Method4(int count, string text)
+// {
+//     string result = String.Empty; //Пустая строка - ""
+//     for (int i = 0; i < count; i++)
+//     {
+//         result = result + text;
+//     }
+//     return result;
+// }
+// string res = Method4(10, " qwerty");
+// // Console.Write(res);
+
+// for (int i = 1; i <= 10; i++)
+// {
+//     for (int j = 1; j <= 10; j++)
+//     {
+//         Console.WriteLine($"{i} x {j} = {i * j}");
+//     }
+//      Console.WriteLine(); //Пустая строка после выполнения второго цикла
+// }
+
+string text = "Я думаю, – сказал князь, улыбаясь, – что,"
+                + "ежели бы вас послали вместо нашего милого Винценгероде,"
+                + "вы бы взяли приступом согласие прусского короля."
+                + "Вы так красноречивы. Вы дадите мне чаю?";
+
+// string s = "qwerty"
+//             012345
+// s[3] = r
+
+string Replace(string text, char oldValue, char newValue)
 {
-    string result = String.Empty; //Пустая строка - ""
-    for (int i = 0; i < count; i++)
+    string result = String.Empty;
+
+    int length = text.Length;
+    for (int i = 0; i < length; i++)
     {
-        result = result + text;
+        if (text[i] == oldValue) result = result + $"{newValue}";
+        else result = result + $"{text[i]}";
+
     }
     return result;
 }
-string res = Method4(10, " qwerty");
-// Console.Write(res);
-
-for (int i = 1; i <= 10; i++)
-{
-    for (int j = 1; j <= 10; j++)
-    {
-        Console.WriteLine($"{i} x {j} = {i * j}");
-    }
-     Console.WriteLine(); //Пустая строка после выполнения второго цикла
-}
+string newText = Replace(text, ' ', '|');
+Console.WriteLine(newText);
