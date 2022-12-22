@@ -23,17 +23,16 @@ else
     {
 
         x = (b2 - b1) / -(k2 - k1);
-        x = Math.Round(x, 3);
+        x = Math.Round(x, 2);
         return x;
     }
     double FindY(double k1, double b1)
     {;
 
         y = k1 * x + b1;
-        y = Math.Round(y, 3);
+        y = Math.Round(y, 2);
         return y;
     }
     Console.WriteLine();
-    Console.Write("Точка пересечения данных прямых: (" + FindX(k1, b1, k2, b2) + "; ");
-    Console.Write(FindY(k1, b1) + ")");
+    Console.Write("Точка пересечения данных прямых: (" + FindX(k1, b1, k2, b2) + "; " +FindY(k1, b1) + ")");
 }
