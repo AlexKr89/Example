@@ -34,5 +34,5 @@ else
         return y;
     }
     Console.WriteLine();
-    Console.Write("Точка пересечения данных прямых: (" + FindX(k1, b1, k2, b2) + "; " +FindY(k1, b1) + ")");
+    Console.Write("Точка пересечения прямых: (" + FindX(k1, b1, k2, b2) + "; " +FindY(k1, b1) + ")");
 }
