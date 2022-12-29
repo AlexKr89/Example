@@ -2,6 +2,7 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
+
 Console.WriteLine("Введите N");
 int num = int.Parse(Console.ReadLine()!);
 
